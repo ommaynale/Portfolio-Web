@@ -9,7 +9,7 @@ import ProjectsPage from '@/pages/Projects';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio-Web">
       <Providers>
         <div className="min-h-screen bg-background font-sans text-foreground antialiased">
           <div className="site-frame site-frame--top" aria-hidden="true" />
