@@ -9,7 +9,7 @@ import ProjectsPage from '@/pages/Projects';
 
 function App() {
   return (
-    <BrowserRouter basename="/Portfolio-Web">
+    <HashRouter basename="/Portfolio-Web">
       <Providers>
         <div className="min-h-screen bg-background font-sans text-foreground antialiased">
           <div className="site-frame site-frame--top" aria-hidden="true" />
@@ -53,7 +53,7 @@ function App() {
           </Routes>
         </div>
       </Providers>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
