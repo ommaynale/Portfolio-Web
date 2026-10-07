@@ -11,6 +11,7 @@ export default {
         border: 'var(--border)',
         ring: 'var(--ring)',
         frame: 'var(--frame)',
+        // Hey This Is Code Changes 
       },
       fontFamily: {
         sans: 'var(--font-sans)',
