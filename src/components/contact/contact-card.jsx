@@ -85,6 +85,9 @@ function SocialIcon({ href, label, lucideIcon: LucideIcon, imageSrc }) {
   const Component = isExternal ? 'a' : Link;
   const linkProps = isExternal ? { href } : { to: href };
   
+  // Fix image path for GitHub Pages
+  const imageUrl = imageSrc ? import.meta.env.BASE_URL + imageSrc.replace('/', '') : null;
+  
   return (
     <Component
       {...linkProps}
@@ -94,9 +97,9 @@ function SocialIcon({ href, label, lucideIcon: LucideIcon, imageSrc }) {
     >
       {LucideIcon ? (
         <LucideIcon className="h-4 w-4" strokeWidth={2.5} aria-hidden="true" />
-      ) : imageSrc ? (
+      ) : imageUrl ? (
         <img
-          src={imageSrc}
+          src={imageUrl}
           alt=""
           width={14}
           height={14}

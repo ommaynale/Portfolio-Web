@@ -2,8 +2,8 @@ import { HeroCtas } from './hero-ctas';
 import { FadeIn, ScaleUnblur } from '@/components/ui/motion-primitives';
 import { PortraitMorph } from './portrait-morph';
 
-const PORTRAIT_SRC = '/josh.webp';
-const PORTRAIT_HOVER_SRC = '/josh_wave.webp';
+const PORTRAIT_SRC = import.meta.env.BASE_URL + 'josh.webp';
+const PORTRAIT_HOVER_SRC = import.meta.env.BASE_URL + 'josh_wave.webp';
 
 export function Hero() {
   return (

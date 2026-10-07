@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Providers } from '@/components/layout/providers';
 import { Nav } from '@/components/layout/nav';
 import { PageBackdrop } from '@/components/layout/page-backdrop';
@@ -9,7 +9,7 @@ import ProjectsPage from '@/pages/Projects';
 
 function App() {
   return (
-    <HashRouter basename="/Portfolio-Web">
+    <HashRouter>
       <Providers>
         <div className="min-h-screen bg-background font-sans text-foreground antialiased">
           <div className="site-frame site-frame--top" aria-hidden="true" />
